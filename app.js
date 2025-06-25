@@ -1,6 +1,7 @@
 const express = require("express");
-require("dotenv").config();
-require("./models/index");
+const cookiParser = require("cookie-parser")
+require("dotenv").config();  
+require("./models/index");  
 
 const app = express();
 const PORT = process.env.PORT || 3000;
